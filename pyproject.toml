@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cs2-price-api"
+version = "1.0.0"
+description = "Official API Skins client for CS2 skin prices: the cheapest offers and highest buy orders across marketplaces"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "API Skins", email = "contact@apiskins.com" }]
+keywords = ["cs2", "csgo", "counter-strike", "skins", "prices", "steam market", "buff163", "csfloat", "skinport", "dmarket", "api", "trading"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Games/Entertainment",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+async = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://apiskins.com/price-api"
+Documentation = "https://apiskins.com/api-docs"
+Source = "https://github.com/apiskins/cs2-price-api-python"
+Issues = "https://github.com/apiskins/cs2-price-api-python/issues"
+Pricing = "https://apiskins.com/pricing"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cs2_price_api"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "README.md", "LICENSE"]
