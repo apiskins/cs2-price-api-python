@@ -9,7 +9,7 @@ description = "Official API Skins client for CS2 skin prices: the cheapest offer
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "API Skins", email = "contact@apiskins.com" }]
 keywords = ["cs2", "csgo", "counter-strike", "skins", "prices", "steam market", "buff163", "csfloat", "skinport", "dmarket", "api", "trading"]
 classifiers = [
