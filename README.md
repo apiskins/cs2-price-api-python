@@ -5,7 +5,7 @@ The official Python client for the [API Skins](https://apiskins.com) CS2 price A
 - **Offers**: every CS2 item's cheapest listing on each marketplace
 - **Buy orders**: every item's highest buy order on each marketplace that has them
 
-Typed, no dependencies (httpx only for the async client), Python 3.9+.
+Typed, no dependencies (httpx only for the async client), Python 3.10+.
 
 ```sh
 pip install cs2-price-api
